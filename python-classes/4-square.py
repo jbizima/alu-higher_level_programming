@@ -3,7 +3,11 @@
 
 
 class Square:
-     """Represent a square."""
+
+    """Private instance attribute: size
+    size must be an integer
+    The size is greater than or equal to 0
+    """
 
     def __init__(self, size=0):
         if not isinstance(size, int):
@@ -14,21 +18,21 @@ class Square:
             self.__size = size
 
     def area(self):
-        """that returns the current area of the square
+        """that returns the current square area
         """
 
         return (self.__size ** 2)
 
     @property
     def size(self):
-        """to retrieve the size of the square
+        """to retrieve it
         """
 
         return self.__size
 
     @size.setter
     def size(self, value):
-        """to set the size of the square
+        """to set it
         """
         if not isinstance(value, int):
             raise TypeError('size must be an integer')
