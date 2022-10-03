@@ -3,9 +3,6 @@ const argv = process.argv;
 const x = parseInt(argv[2]);
 
 function factorial (n) {
-   if (n < 0) {
-    return (-1);
-  }
   if (n === 0 || isNaN(n)) {
     return (1);
   }
